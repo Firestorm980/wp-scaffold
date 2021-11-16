@@ -1,3 +1,5 @@
+const purgecssWordpress = require('purgecss-with-wordpress');
+
 // tailwind.config.js
 module.exports = {
 	purge: {
@@ -8,12 +10,9 @@ module.exports = {
 			'./partials/**/*.php',
 			'./templates/**/*.php',
 		],
+		safelist: [...purgecssWordpress.safelist],
 	},
-	theme: {
-		extend: {},
+	corePlugins: {
+		preflight: false,
 	},
-	variants: {
-		extend: {},
-	},
-	plugins: [],
 };
