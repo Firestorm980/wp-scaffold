@@ -1,0 +1,5 @@
+@layer base {
+	img {
+		@apply h-auto max-w-full inline-block align-middle;
+	}
+}

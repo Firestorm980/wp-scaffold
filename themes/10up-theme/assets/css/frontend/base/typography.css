@@ -4,4 +4,78 @@ html {
 
 body {
 	font-family: sans-serif;
+
+	@apply text-base;
+	@apply lg:text-lg;
+}
+
+@layer base {
+
+	h1,
+	.h1 {
+
+		@apply text-5xl;
+	}
+
+	h2,
+	.h2 {
+
+		@apply text-4xl;
+	}
+
+	h3,
+	.h3 {
+
+		@apply text-3xl;
+	}
+
+	h4,
+	.h4 {
+
+		@apply text-2xl;
+	}
+
+	h5,
+	.h5 {
+
+		@apply text-xl;
+	}
+
+	h6,
+	.h6 {
+
+		@apply text-lg;
+	}
+
+	h1,
+	.h1,
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6,
+	p {
+
+		@apply my-4;
+	}
+
+	a {
+		@apply text-indigo-500;
+		@apply hover:text-indigo-800 focus:text-indigo-800;
+		@apply transition-colors;
+	}
+
+	li::marker {
+		@apply text-indigo-700;
+	}
+
+	figcaption {
+		@apply text-sm italic;
+		@apply text-gray-600;
+	}
 }
